@@ -1,0 +1,83 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #F5F8FB;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #1f2937;
+}
+
+.search-box {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+input[type='text'] {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+#clearButton {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: #EF3124;
+  color:#f3f4f6;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.suggestions {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+}
+
+.suggestion {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.suggestion:hover {
+  background: #f3f4f6;
+}
+
+.result {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.field {
+  margin-bottom: 0.5rem;
+}
+
+.field strong {
+  display: inline-block;
+  width: 180px;
+}
+
+.field.gray {
+  color: #9ca3af;
+}
+
+.highlight {
+  background-color: #fef3c7;
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+}
