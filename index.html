@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поиск терминала</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Поиск информации по терминалу</h1>
+    <div class="search-box">
+      <div class="input-wrapper">
+        <input
+          type="text"
+          id="search"
+          placeholder="Введите модель терминала (например, A90)"
+        />
+        <button id="clearButton">Очистить</button>
+      </div>
+      <div class="suggestions" id="suggestions"></div>
+      <div class="result" id="result"></div>
+    </div>
+
+    <script src="terminalsData.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
