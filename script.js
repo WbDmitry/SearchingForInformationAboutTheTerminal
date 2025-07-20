@@ -92,13 +92,11 @@ class TerminalSearch {
 
   displayResult(terminal) {
     const resultHTML = Object.entries(terminal)
-      .filter(([key, value]) => key !== 'model' && value)
       .map(([key, value]) => this.createFieldHTML(key, value, terminal))
       .join('')
 
     this.elements.result.innerHTML = `
-      <div class="field"><strong>Модель:</strong> ${terminal.model}</div>
-      <div class="field"><strong>Тип терминала:</strong> ${terminal.terminal_type}</div>
+
       ${resultHTML}
     `
   }
@@ -123,12 +121,12 @@ class TerminalSearch {
     const modelLower = model.toLowerCase()
     let message = ''
 
-    if (modelLower === 'aisino v37') {
-      message = 'Работаем с Эвотор. По другим кассам — в техподдержку производителя.'
-    } else if (modelLower === 'teplo p8') {
-      message = 'Работаем с R-Keeper. По другим кассам — в техподдержку производителя.'
+    if (modelLower === 'aisino v37 (usb)') {
+      message = 'Работаем с 1C, Iiko (Айка), Эвотор. </br></br>По другим кассам — в техподдержку производителя.'
+    } else if (modelLower === 'telpo p8 (eth, wi-fi, usb)') {
+      message = 'Работаем с 1C, Iiko (Айка), R-Keeper Эвотор, Штрих-М, SetRetail, Бифит 3, Продуман. Проверь в БЗ — не все версии пока подходят. </br></br>По другим кассам — в техподдержку производителя.'
     } else {
-      message = 'Работаем с 1C, liko(Айка). По другим кассам — в техподдержку производителя.'
+      message = 'Работаем с 1C, Iiko (Айка). </br></br>По другим кассам — в техподдержку производителя.'
     }
 
     return `<div class="field highlight">${message}</div>`
