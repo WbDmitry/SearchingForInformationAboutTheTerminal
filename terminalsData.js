@@ -1,7 +1,7 @@
 const terminals = [
   {
     vendor: 'INPAS',
-    model: 'PAX S920 (Wi-FI)',
+    model: 'PAX S920 (Wi-FI, Obw)',
     connection_type: 'WiFI(на наклейке с обратной стороны Obw)',
     terminal_type: 'мобильный',
     pinpad: 'нет',
@@ -12,7 +12,7 @@ const terminals = [
   },
   {
     vendor: 'INPAS',
-    model: 'PAX S920 (Wi-FI+4G)',
+    model: 'PAX S920 (Wi-FI + 4G, OPw)',
     connection_type:
       'SIM 2G, 3G,4G + WIFI (на наклейке с обратной стороны OPw)',
     terminal_type: 'мобильный',
@@ -24,7 +24,7 @@ const terminals = [
   },
   {
     vendor: 'INPAS',
-    model: 'PAX S920 (3G) (SIM)',
+    model: 'PAX S920 (3G, OwO)',
     connection_type: 'SIM 2G, 3G (на наклейке с обратной стороны OwO)',
     terminal_type: 'мобильный',
     pinpad: 'нет',
